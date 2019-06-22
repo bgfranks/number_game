@@ -1,0 +1,125 @@
+/* Global */
+
+body {
+  color: #333;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Utility */
+
+hr {
+  border-bottom: solid 3px #666;
+  border-radius: 3px;
+  width: 50%;
+  margin-top: 0;
+}
+
+/* Conatiner */
+
+.container {
+  background-color: #f4f4f4;
+  margin-top: 17%;
+  border-radius: 5px;
+}
+
+.container h1 {
+  text-align: center;
+  padding-top: 3%;
+}
+
+/* Game */
+
+#game p {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#game .inputs {
+  text-align: center;
+}
+
+#game #guess-btn {
+  background-color: #333;
+  color: #f4f4f4;
+  transition: 1s;
+  margin-left: 10px;
+}
+
+#game #guess-btn:hover {
+  background-color: #666;
+}
+
+/* Rainbow Background Animation */
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(
+    124deg,
+    #ff2400,
+    #e81d1d,
+    #e8b71d,
+    #e3e81d,
+    #1de840,
+    #1ddde8,
+    #2b1de8,
+    #dd00f3,
+    #dd00f3
+  );
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 18s ease infinite;
+  -z-animation: rainbow 18s ease infinite;
+  -o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-moz-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@-o-keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: 0% 82%;
+  }
+  50% {
+    background-position: 100% 19%;
+  }
+  100% {
+    background-position: 0% 82%;
+  }
+}
